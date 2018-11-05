@@ -1,0 +1,144 @@
+A-exécuter un test spécifique :
+1-effectuer un test coverage
+c:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest>
+vendor\bin\phpunit --coverage-html webroot/coverage tests/TestCase/Model/Table/EntrefiletsTableTest
+2-effectuer un test model function
+c: c:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest>
+->vendor\bin\phpunit --filter testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest
+->vendor\bin\phpunit --filter testValidEmail tests/TestCase/Model/Table/UsersTableTest
+=====================================================================
+B-effectuer un test controller action  
+c:vendor\bin\phpunit --filter testIndex tests/TestCase/Controller/EntrefiletsControllerTest
+
+Lorsque l'on utilise le behavior translate, il faut ajouter aux fixtures :
+
+    , 'core.translates'
+============================ tasks========================================
+C-Vous devez ajouter des tests unitaires à au moins un modèle
+ de votre application CakePHP:
+
+
+1-Il doit aussi y avoir au moins un test de code JS pour vérifier la faille XSS ;
+ public function testSaveEvilScript() {
+    $data = ['todo' => '<script>alert("hi")</script>', 'is_done' => 1];
+    $todo = $this->Todos->newEntity($data);
+    $this->Todos->save($todo);
+    $newTotal = $this->Todos->find()->count();
+    $this->assertEquals(3, $newTotal);
+
+    $result = $this->Todos->find('recent', ['status' => 1])->where(['id' => 3])->first();
+    $this->assertEquals('&lt;script&gt;alert(&quot;hi&quot;)&lt;/script&gt;', $result->todo);
+  }
+
+2-On doit retrouver aussi des tests pour vérifier le traitement 
+des requêtes envoyées à au moins un contrôleur : 
+    a)Vos tests doivent vérifier chacune des actions de lecture (index et view), 
+    d'ajout, de modification et de suppression.
+namespace App\Test\TestCase\Controller;
+
+use Cake\ORM\TableRegistry;
+use Cake\TestSuite\IntegrationTestCase;
+
+class ArticlesControllerTest extends IntegrationTestCase
+{
+    public $fixtures = ['app.articles'];
+
+    public function testIndex()
+    {
+        $this->get('/articles');
+
+        $this->assertResponseOk();
+        // D'autres asserts.
+    }
+
+    public function testIndexQueryData()
+    {
+        $this->get('/articles?page=1');
+
+        $this->assertResponseOk();
+        // D'autres asserts.
+    }
+
+    public function testIndexShort()
+    {
+        $this->get('/articles/index/short');
+
+        $this->assertResponseOk();
+        $this->assertResponseContains('Articles');
+        // D'autres asserts.
+    }
+
+    public function testIndexPostData()
+    {
+        $data = [
+            'user_id' => 1,
+            'published' => 1,
+            'slug' => 'new-article',
+            'title' => 'New Article',
+            'body' => 'New Body'
+        ];
+        $this->post('/articles', $data);
+
+        $this->assertResponseSuccess();
+        $articles = TableRegistry::get('Articles');
+        $query = $articles->find()->where(['title' => $data['title']]);
+        $this->assertEquals(1, $query->count());
+    }
+}
+
+
+    b)On doit aussi retrouver au moins un test d'accès autorisé et 
+    au moins un autre non-autorisé.
+
+public function testBasicAuthentication()
+{
+    $this->configRequest([
+        'environment' => [
+            'PHP_AUTH_USER' => 'username',
+            'PHP_AUTH_PW' => 'password',
+        ]
+    ]);
+
+    $this->get('/api/posts');
+    $this->assertResponseOk();
+}
+=====================================
+public function testAddUnauthenticatedFails()
+{
+    // Pas de données de session définies.
+    $this->get('/articles/add');
+
+    $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
+}
+
+public function testAddAuthenticated()
+{
+    // Définit des données de session
+    $this->session([
+        'Auth' => [
+            'User' => [
+                'id' => 1,
+                'username' => 'testing',
+                // autres clés.
+            ]
+        ]
+    ]);
+    $this->get('/articles/add');
+
+    $this->assertResponseOk();
+    // Autres assertions.
+}
+
+
+=================================================================
+
+Les 5 étapes cruciales pour le fonctionnement d'un traitement JQuery-UI avec Ajax et CakePHP:
+1.Le chargement de JQuery et de JQuery-UI ;
+2.Le chargement de votre programme JS ;
+3.L'autorisation d'accès du composant Auth à la la méthode de recherche du contrôleur ;
+4.L'envoi de la requête XmlHttpRequest par votre programme JS ;
+5.La réponse reçue par la requête XmlHttpRequest ;
+
+
+
+

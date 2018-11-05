@@ -1,0 +1,38 @@
+<?php
+namespace App\Model\Entity;
+
+use Cake\ORM\Entity;
+
+/**
+ * Tag Entity
+ *
+ * @property int $id
+ * @property string $title
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\TagsTitleTranslation $title_translation
+ * @property \App\Model\Entity\I18n[] $_i18n
+ * @property \App\Model\Entity\Entrefilet[] $entrefilets
+ */
+class Tag extends Entity
+{
+
+    /**
+     * Fields that can be mass assigned using newEntity() or patchEntity().
+     *
+     * Note that when '*' is set to true, this allows all unspecified fields to
+     * be mass assigned. For security purposes, it is advised to set '*' to false
+     * (or remove it), and explicitly make individual fields accessible as needed.
+     *
+     * @var array
+     */
+    protected $_accessible = [
+        'title' => true,
+        'created' => true,
+        'modified' => true,
+        'title_translation' => true,
+        '_i18n' => true,
+        'entrefilets' => true
+    ];
+}

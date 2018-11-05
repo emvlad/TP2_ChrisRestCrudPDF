@@ -1,0 +1,479 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-09-09 16:03+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CritiqsController.php:72;96
+msgid "The critic has been saved."
+msgstr ""
+
+#: Controller/CritiqsController.php:76;100
+msgid "The critic could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CritiqsController.php:117
+msgid "The critic has been deleted."
+msgstr ""
+
+#: Controller/CritiqsController.php:119
+msgid "The critic could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EntrefiletsController.php:89
+msgid "Your item has been saved."
+msgstr ""
+
+#: Controller/EntrefiletsController.php:92
+msgid "Unable to add your item."
+msgstr ""
+
+#: Controller/EntrefiletsController.php:117
+msgid "Your item has been updated."
+msgstr ""
+
+#: Controller/EntrefiletsController.php:123
+msgid "Unable to update your item."
+msgstr ""
+
+#: Controller/EntrefiletsController.php:146
+msgid "The current entrefilet was deleted."
+msgstr ""
+
+#: Controller/TagsController.php:56;81
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:60;85
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:103
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:105
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:73;96
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:77;100
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:116
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:118
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Critiqs/add.ctp:9
+#: Template/Critiqs/edit.ctp:10
+#: Template/Critiqs/index.ctp:10;26
+#: Template/Critiqs/view.ctp:10
+#: Template/Entrefilets/add.ctp:20
+#: Template/Entrefilets/edit.ctp:20
+#: Template/Entrefilets/index.ctp:25;52
+#: Template/Entrefilets/view.ctp:24;82;114
+#: Template/Tags/add.ctp:10
+#: Template/Tags/edit.ctp:10
+#: Template/Tags/index.ctp:9;26
+#: Template/Tags/view.ctp:10;63
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;25
+#: Template/Users/view.ctp:9;55
+msgid "Actions"
+msgstr ""
+
+#: Template/Critiqs/add.ctp:10
+#: Template/Critiqs/edit.ctp:17
+#: Template/Critiqs/view.ctp:13
+#: Template/Entrefilets/add.ctp:24
+#: Template/Entrefilets/edit.ctp:29
+#: Template/Entrefilets/index.ctp:31
+#: Template/Entrefilets/view.ctp:31
+msgid "List Critics"
+msgstr ""
+
+#: Template/Critiqs/add.ctp:11
+#: Template/Critiqs/edit.ctp:18
+#: Template/Critiqs/index.ctp:12
+#: Template/Critiqs/view.ctp:15
+#: Template/Entrefilets/add.ctp:21
+#: Template/Entrefilets/edit.ctp:26
+#: Template/Entrefilets/view.ctp:27
+#: Template/Tags/add.ctp:12
+#: Template/Tags/edit.ctp:18
+#: Template/Tags/index.ctp:11
+#: Template/Tags/view.ctp:23
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Entrefilets"
+msgstr ""
+
+#: Template/Critiqs/add.ctp:13
+#: Template/Critiqs/edit.ctp:19
+#: Template/Critiqs/index.ctp:13
+#: Template/Critiqs/view.ctp:17
+#: Template/Entrefilets/index.ctp:26
+#: Template/Entrefilets/view.ctp:28
+#: Template/Tags/add.ctp:13
+#: Template/Tags/edit.ctp:20
+#: Template/Tags/index.ctp:13
+#: Template/Tags/view.ctp:26
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Entrefilet"
+msgstr ""
+
+#: Template/Critiqs/add.ctp:20
+msgid "Add Critics"
+msgstr ""
+
+#: Template/Critiqs/add.ctp:27
+#: Template/Critiqs/edit.ctp:32
+#: Template/Entrefilets/add.ctp:43
+msgid "Apply"
+msgstr ""
+
+#: Template/Critiqs/edit.ctp:12
+#: Template/Critiqs/index.ctp:41
+#: Template/Entrefilets/edit.ctp:23
+#: Template/Entrefilets/index.ctp:67
+#: Template/Entrefilets/view.ctp:95;129
+#: Template/Tags/edit.ctp:13
+#: Template/Tags/index.ctp:41
+#: Template/Tags/view.ctp:82
+#: Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:39
+#: Template/Users/view.ctp:70
+msgid "Delete"
+msgstr ""
+
+#: Template/Critiqs/edit.ctp:14
+#: Template/Critiqs/index.ctp:41
+#: Template/Critiqs/view.ctp:12
+#: Template/Entrefilets/edit.ctp:23
+#: Template/Entrefilets/index.ctp:68
+#: Template/Entrefilets/view.ctp:26;96;130
+#: Template/Tags/edit.ctp:14
+#: Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:41
+#: Template/Users/view.ctp:11;71
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Critiqs/edit.ctp:25
+msgid "Edit Critiq"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:11
+#: Template/Critiqs/view.ctp:14
+#: Template/Entrefilets/add.ctp:25
+#: Template/Entrefilets/edit.ctp:30
+#: Template/Entrefilets/index.ctp:33
+#: Template/Entrefilets/view.ctp:32
+msgid "New Critic"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:17
+msgid "Critics"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:39
+#: Template/Entrefilets/index.ctp:65
+#: Template/Entrefilets/view.ctp:91;125
+#: Template/Tags/index.ctp:37
+#: Template/Tags/view.ctp:76
+#: Template/Users/index.ctp:37
+#: Template/Users/view.ctp:68
+msgid "View"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:40
+#: Template/Entrefilets/index.ctp:66
+#: Template/Entrefilets/view.ctp:93;127
+#: Template/Tags/index.ctp:39
+#: Template/Tags/view.ctp:79
+#: Template/Users/index.ctp:38
+#: Template/Users/view.ctp:69
+msgid "Edit"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:49
+#: Template/Entrefilets/index.ctp:76
+#: Template/Tags/index.ctp:53
+#: Template/Users/index.ctp:49
+msgid "first"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:50
+#: Template/Entrefilets/index.ctp:77
+#: Template/Tags/index.ctp:54
+#: Template/Users/index.ctp:50
+msgid "previous"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:52
+#: Template/Entrefilets/index.ctp:79
+#: Template/Tags/index.ctp:56
+#: Template/Users/index.ctp:52
+msgid "next"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:53
+#: Template/Entrefilets/index.ctp:80
+#: Template/Tags/index.ctp:57
+#: Template/Users/index.ctp:53
+msgid "last"
+msgstr ""
+
+#: Template/Critiqs/index.ctp:55
+#: Template/Entrefilets/index.ctp:82
+#: Template/Tags/index.ctp:59
+#: Template/Users/index.ctp:55
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:11
+msgid "Edit Critic"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:12
+msgid "Delete Critic"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:25
+msgid "Entrefilet"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:30
+#: Template/Entrefilets/view.ctp:110
+msgid "Name"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:34
+#: Template/Entrefilets/view.ctp:53;78;108
+#: Template/Tags/view.ctp:38;55
+#: Template/Users/view.ctp:30;47
+msgid "Id"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:38
+#: Template/Entrefilets/view.ctp:57;80;112
+#: Template/Tags/view.ctp:42;61
+#: Template/Users/view.ctp:34;53
+msgid "Created"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:42
+#: Template/Entrefilets/view.ctp:61;81;113
+#: Template/Tags/view.ctp:46;62
+#: Template/Users/view.ctp:38;54
+msgid "Modified"
+msgstr ""
+
+#: Template/Critiqs/view.ctp:47
+#: Template/Entrefilets/view.ctp:111
+msgid "Critic"
+msgstr ""
+
+#: Template/Entrefilets/add.ctp:22
+#: Template/Entrefilets/edit.ctp:27
+#: Template/Entrefilets/index.ctp:27
+#: Template/Entrefilets/view.ctp:29
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: Template/Entrefilets/add.ctp:23
+#: Template/Entrefilets/edit.ctp:28
+#: Template/Entrefilets/index.ctp:29
+#: Template/Entrefilets/view.ctp:30
+#: Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: Template/Entrefilets/add.ctp:26
+#: Template/Entrefilets/edit.ctp:31
+#: Template/Entrefilets/index.ctp:35
+#: Template/Entrefilets/view.ctp:33
+#: Template/Tags/add.ctp:11
+#: Template/Tags/edit.ctp:17
+#: Template/Tags/view.ctp:19
+msgid "List Tags"
+msgstr ""
+
+#: Template/Entrefilets/add.ctp:27
+#: Template/Entrefilets/edit.ctp:32
+#: Template/Entrefilets/index.ctp:37
+#: Template/Entrefilets/view.ctp:34
+#: Template/Tags/index.ctp:10
+#: Template/Tags/view.ctp:21
+msgid "New Tag"
+msgstr ""
+
+#: Template/Entrefilets/add.ctp:33
+msgid "Add Entrefilet"
+msgstr ""
+
+#: Template/Entrefilets/edit.ctp:38
+#: Template/Entrefilets/view.ctp:25
+msgid "Edit Entrefilet"
+msgstr ""
+
+#: Template/Entrefilets/edit.ctp:48
+#: Template/Tags/add.ctp:25
+#: Template/Tags/edit.ctp:34
+#: Template/Users/add.ctp:24
+#: Template/Users/edit.ctp:30
+msgid "Submit"
+msgstr ""
+
+#: Template/Entrefilets/index.ctp:42
+msgid "Entrefilets online"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:26
+msgid "Delete Entrefilet"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:41
+msgid "User"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:45;79
+#: Template/Tags/view.ctp:34;57
+#: Template/Users/view.ctp:49
+msgid "Title"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:49
+#: Template/Tags/view.ctp:58
+#: Template/Users/view.ctp:50
+msgid "Slug"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:65
+#: Template/Tags/view.ctp:60
+#: Template/Users/view.ctp:52
+msgid "Published"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:66
+msgid "Yes"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:66
+msgid "No"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:70
+#: Template/Tags/view.ctp:59
+#: Template/Users/view.ctp:51
+msgid "Body"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:74
+msgid "Related Tags"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:104
+msgid "Related Critics"
+msgstr ""
+
+#: Template/Entrefilets/view.ctp:109
+msgid "Entrefilet Id"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Tags/add.ctp:19
+msgid "Add Tag"
+msgstr ""
+
+#: Template/Tags/edit.ctp:27
+#: Template/Tags/view.ctp:12
+msgid "Edit Tag"
+msgstr ""
+
+#: Template/Tags/index.ctp:18
+msgid "Tags"
+msgstr ""
+
+#: Template/Tags/index.ctp:43
+msgid "Are you sure you wantto delete the current item?"
+msgstr ""
+
+#: Template/Tags/view.ctp:15
+msgid "Delete Tag"
+msgstr ""
+
+#: Template/Tags/view.ctp:17;84
+msgid "Are you sure you want to delete this item # {0}?"
+msgstr ""
+
+#: Template/Tags/view.ctp:51
+#: Template/Users/view.ctp:43
+msgid "Related Entrefilets"
+msgstr ""
+
+#: Template/Tags/view.ctp:56
+#: Template/Users/view.ctp:48
+msgid "User Id"
+msgstr ""
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:24
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr ""
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:22
+msgid "Email"
+msgstr ""
+
+#: Template/Users/view.ctp:26
+msgid "Password"
+msgstr ""
+

@@ -1,0 +1,1599 @@
+2018-09-29 04:45:03 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column:  in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 165
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(165): PDO->exec('CREATE TABLE `e...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php(244): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `e...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\SQLiteAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php(136): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(661): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(555): Phinx\Db\Table->executeActions(false)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Table.php(91): Phinx\Db\Table->create()
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\config\Migrations\20180929043354_Initial.php(123): Migrations\Table->create()
+#10 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#11 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#12 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#13 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20180929043354', false)
+#14 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-29 04:48:23 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column:  in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 165
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(165): PDO->exec('CREATE TABLE `e...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php(244): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `e...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\SQLiteAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php(136): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(661): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(555): Phinx\Db\Table->executeActions(false)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Table.php(91): Phinx\Db\Table->create()
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\config\Migrations\20180929043354_Initial.php(123): Migrations\Table->create()
+#10 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#11 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#12 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#13 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20180929043354', false)
+#14 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-29 05:07:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1 table `critiqs` already exists in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 165
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(165): PDO->exec('CREATE TABLE `c...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php(244): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `c...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\SQLiteAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php(136): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(661): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(555): Phinx\Db\Table->executeActions(false)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Table.php(91): Phinx\Db\Table->create()
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\config\Migrations\20180929043354_Initial.php(40): Migrations\Table->create()
+#10 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#11 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#12 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#13 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20180929043354', false)
+#14 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-10-11 05:13:16 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 291
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(291): PDO->prepare('INSERT INTO `cr...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(597): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(569): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\config\Seeds\CritiqsSeed.php(24): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CritiqsSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(416): Phinx\Migration\Manager\Environment->executeSeed(Object(CritiqsSeed))
+#10 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(553): Phinx\Migration\Manager->executeSeed('default', Object(CritiqsSeed))
+#11 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-11 14:59:40 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 291
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(291): PDO->prepare('INSERT INTO `cr...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(597): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(569): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\config\Seeds\CritiqsSeed.php(24): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CritiqsSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(416): Phinx\Migration\Manager\Environment->executeSeed(Object(CritiqsSeed))
+#10 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(553): Phinx\Migration\Manager->executeSeed('default', Object(CritiqsSeed))
+#11 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-31 20:45:40 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\EntrefiletsTitleTranslationFixture" not found. Fixture "app.entrefilets_title_translation" was referenced in test case "App\Test\TestCase\Model\Table\EntrefiletsTableTest". in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-10-31 20:51:28 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\EntrefiletsTitleTranslationFixture" not found. Fixture "app.entrefilets_title_translation" was referenced in test case "App\Test\TestCase\Model\Table\EntrefiletsTableTest". in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-10-31 20:52:29 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\EntrefiletsTitleTranslationFixture" not found. Fixture "app.entrefilets_title_translation" was referenced in test case "App\Test\TestCase\Model\Table\EntrefiletsTableTest". in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\EntrefiletsTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-02 13:34:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:34:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:34:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:34:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:42:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:42:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:45:47 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:45:47 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:47:35 Error: [ParseError] syntax error, unexpected ''gazette_id'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\tests\TestCase\Model\Table\EntrefiletsTableTest.php on line 64
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Util\Fileloader.php(48): PHPUnit\Util\Fileloader::load('C:\\Program File...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\StandardTestSuiteLoader.php(43): PHPUnit\Util\Fileloader::checkAndLoad('tests/TestCase/...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(130): PHPUnit\Runner\StandardTestSuiteLoader->load('tests/TestCase/...', 'tests/TestCase/...')
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(73): PHPUnit\Runner\BaseTestRunner->loadSuiteClass('tests/TestCase/...', '')
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(169): PHPUnit\Runner\BaseTestRunner->getTest('tests/TestCase/...', '', Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#7 {main}
+
+
+2018-11-02 13:47:37 Error: [ParseError] syntax error, unexpected ''gazette_id'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\tests\TestCase\Model\Table\EntrefiletsTableTest.php on line 64
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Util\Fileloader.php(48): PHPUnit\Util\Fileloader::load('C:\\Program File...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\StandardTestSuiteLoader.php(43): PHPUnit\Util\Fileloader::checkAndLoad('tests/TestCase/...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(130): PHPUnit\Runner\StandardTestSuiteLoader->load('tests/TestCase/...', 'tests/TestCase/...')
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(73): PHPUnit\Runner\BaseTestRunner->loadSuiteClass('tests/TestCase/...', '')
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(169): PHPUnit\Runner\BaseTestRunner->getTest('tests/TestCase/...', '', Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#7 {main}
+
+
+2018-11-02 13:47:55 Error: [ParseError] syntax error, unexpected ''gazette_id'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\tests\TestCase\Model\Table\EntrefiletsTableTest.php on line 64
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Util\Fileloader.php(48): PHPUnit\Util\Fileloader::load('C:\\Program File...')
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\StandardTestSuiteLoader.php(43): PHPUnit\Util\Fileloader::checkAndLoad('tests/TestCase/...')
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(130): PHPUnit\Runner\StandardTestSuiteLoader->load('tests/TestCase/...', 'tests/TestCase/...')
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(73): PHPUnit\Runner\BaseTestRunner->loadSuiteClass('tests/TestCase/...', '')
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(169): PHPUnit\Runner\BaseTestRunner->getTest('tests/TestCase/...', '', Array)
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#7 {main}
+
+
+2018-11-02 13:48:16 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:48:16 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:51:09 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:51:09 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:58:34 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 13:58:34 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:00:03 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:00:03 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:03:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:03:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:05:46 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:05:46 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:07:36 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:07:36 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:08:49 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:08:49 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:10:20 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:10:20 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:18:16 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\EntrefiletsTitleTranslationFixture" not found. Fixture "app.entrefilets_title_translation" was referenced in test case "App\Test\TestCase\Controller\EntrefiletsControllerTest". in C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#5 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-02 14:25:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 14:25:45 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 16:53:17 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 16:53:17 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:03:00 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:03:00 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:04:21 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:04:21 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:24:52 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:24:52 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:26:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:26:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:26:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 17:26:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:49:21 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:49:21 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:55:15 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:55:15 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:55:34 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 19:55:34 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:00:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:00:35 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:01:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:01:06 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:02:36 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-02 20:02:36 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_4_Jtest\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+

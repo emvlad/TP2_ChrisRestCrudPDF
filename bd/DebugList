@@ -1,0 +1,69 @@
+Tasks Force.
+========================================================================
+
+------------------------------------------------------------------------
+A-TP1:
+1) Permettez l'inscription d'un nouvel utilisateur (de niveau "super-utilisateur")
+ en effectuant le traitement suivant:
+a)Envoyez un courriel comprenant un lien de confirmation à l'adresse courriel 
+donnée lors de l'inscription. 
+
+NB: Ce lien doit invoquer l'action d'un contrôleur permettant d'enregistrer
+ la confirmation du courriel de l'utilisateur dans la BD.
+
+b)Utilisez la méthode "uuid" de la classe "text" de CakePHP afin de 
+<<générer un code de confirmation>>.
+(while)Tant que son courriel n'est pas confirmé, 
+un nouvel utilisateur n'aura pas les mêmes droits qu'il aurait en le confirmant.
+
+c) À chaque fois qu'un utilisateur démarre une session, vous devez 
+(if) vérifier si son courriel est confirmé. 
+(then) S'il ne l'est pas vous devez afficher un message 
+indiquant clairement les restrictions qui s'appliquent.
+
+d) (Yes/NO DialogMessage) Vous devez aussi offrir de renvoyer le courriel de confirmation.
+Vous êtes libre de déterminer quelles sont les restrictions applicables aux 
+nouveaux utilisateurs selon votre type d'application.
+
+e)Les vues associées aux actions typiques (crud) du contrôleur d'accueil de
+ votre application, ainsi que celles d'au moins un autre contrôleur dont les
+ modèles sont associés (par exemple celui des utilisateurs), doivent être 
+modifiés de la façon suivante :
+
+1- "super-utilisateurs" :Certaines commandes ne seront visibles 
+que pour les "super-utilisateurs" 
+et d'autres que pour les "administrateurs".
+
+
+2- Le menu doit offrir un lien vers le "profil" (view) de l'utilisateur en session,
+ ainsi qu'un autre pour la déconnexion :
+3- Un "admin" doit pouvoir accéder à tous les profils ;
+Un "super-utilisateur" ne doit pouvoir accéder qu'au sien.
+
+4- La langue d'affichage par défaut doit être une version traduite en français 
+pour l'interface du contrôleur d'accueil et pour l'autre que vous aurez choisi :
+5- La version originale en anglais et aussi dans une troisième langue doivent
+ également être accessibles par des commandes du menu.
+
+6- Votre application doit utiliser une base de données SQLite ;
+
+
+7- Vous devez ajouter une page d'informations "à propos" de votre application web.
+ Cette page d'information doit être disponible à partir du menu principal et contenir:
+Votre nom.
+Le titre du cours:
+420-5b7 MO Applications internet.
+Automne 2018, Collège Montmorency.
+Une description sommaires des étapes d'utilisation typiques permettant 
+de vérifier le bon fonctionnement de votre application web:
+
+Vous devez indiquer clairement comment et avec quels éléments de vos pages interagir:
+Vous devez aussi indiquer le résultat qui est attendu et éventuellement 
+si cela ne fonctionne pas complètement.
+
+**Ces étapes doivent permettre de vérifier les exigences du TP1.
+Le diagramme de la base de données actuelle utilisée par votre application;
+Un lien vers l'emplacement d'où provient le diagramme original.
+
+8- Vous devez produire un dépôt sur GitHub contenant tous les fichiers 
+de votre application web CakePHP (incluant votre base de données MySQL):
