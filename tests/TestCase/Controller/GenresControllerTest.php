@@ -17,6 +17,7 @@ class GenresControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.genres',
+        'app.entrefilets',
         'app.themes'
     ];
 

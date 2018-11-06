@@ -25,8 +25,18 @@ use Cake\Routing\Route\DashedRoute;
 
 Router::extensions(['json', 'xml']);
 
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Genres');
+    $routes->resources('Entrefilets');
+    Router::connect('/api/entrefilets/register', ['controller' => 'Entrefilets', 'action' => 'add', 'prefix' => 'api']);
+    $routes->fallbacks('InflectedRoute');
+});
+
+
 
 Router::defaultRouteClass(DashedRoute::class);
+
 //2- New route we're adding for our tagged action.
 // The trailing `*` tells CakePHP that this action has
 // passed parameters.
@@ -46,3 +56,9 @@ Router::scope('/', function (RouteBuilder $routes) {
        $routes->connect('/email',['controller'=>'Users','action'=>'maildex']);
       $routes->fallbacks(DashedRoute::class);
 });
+
+/**
+ * Load all plugin routes. See the Plugin documentation on
+ * how to customize the loading of plugin routes.
+ */
+Plugin::routes();

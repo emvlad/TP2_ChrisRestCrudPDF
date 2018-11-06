@@ -1,0 +1,20 @@
+
+1-On doit retrouver une interface avec un préfixe de route "admin" pour gérer
+ le contenu de la table choisie pour l'interface monopage :
+
+   2- Un lien vers les deux interfaces admin et monopage doit être présent au menu ;
+  3-  L'action View de cette interface doit offrir un menu déroulant 
+Twitter Bootstrap pour l'accès aux actions :
+    4-    Le menu déroulant doit être adaptatif et se transformer lorsque 
+que l'on visualise avec un format de téléphone cellulaire.
+
+5-Pour une des tables à votre choix, la fonctionnalité affichant un 
+enregistrement spécifique doit offrir l'affichage également sous forme de document pdf :
+
+ 6-   Les vues servant à produire le document pdf doivent avoir été adaptées 
+à ce contexte :
+        Par exemple, il ne doit pas y avoir de liens de navigation.
+    
+7-L'application wkhtmltopdf doit être utilisée pour produire les documents pdf :
+        Elle sera présente à l'emplacement 
+    C:\wkhtmltopdf\bin lors de l'évaluation de votre travail.

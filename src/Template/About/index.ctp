@@ -107,10 +107,17 @@ Voir:testIndex tests/TestCase/Controller/EntrefiletsControllerTest<br><br>
 
 -d'ajout, de modification et de suppression.<br>
 Voir:...<br><br>
+
+
 4-test de code JS pour vérifier la faille XSS<br>
 Voir:......<br><br>   
+
+
 5-rapport HTML de type "Coverage" <br>    
 cliquez le lien vers le rapport ici =>
+
+6-Table choisie pour l'interface monopage: 
+Menu: List Category - "GenresTable"
 
 <?php
 // check out, How to use url-php? voir prof. or students.

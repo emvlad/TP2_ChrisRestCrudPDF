@@ -8,6 +8,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Genres'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Entrefilets'), ['controller' => 'Entrefilets', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Entrefilet'), ['controller' => 'Entrefilets', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Themes'), ['controller' => 'Themes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Theme'), ['controller' => 'Themes', 'action' => 'add']) ?></li>
     </ul>
@@ -18,6 +20,7 @@
         <legend><?= __('Add Genre') ?></legend>
         <?php
             echo $this->Form->control('genre');
+            echo $this->Form->control('classification');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

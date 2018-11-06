@@ -1,49 +1,76 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Genre[]|\Cake\Collection\CollectionInterface $genres
- */
+$urlToRestApi = $this->Url->build('/api/genres', true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('Genres/index', ['block' => 'scriptBottom']);
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Genre'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Themes'), ['controller' => 'Themes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Theme'), ['controller' => 'Themes', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="genres index large-9 medium-8 columns content">
-    <h3><?= __('Genres') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('genre') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($genres as $genre): ?>
-            <tr>
-                <td><?= $this->Number->format($genre->id) ?></td>
-                <td><?= h($genre->genre) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $genre->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $genre->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $genre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $genre->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default genres-content">
+            <div class="panel-heading">Genres <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
+            <div class="panel-body none formData" id="addForm">
+                <h2 id="actionLabel">Add Genre</h2>
+                <form class="form" id="genreAddForm" enctype='application/json'>
+                    <div class="form-group">
+                        <label>Genre</label>
+                        <input type="text" class="form-control" name="genre" id="name"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Classification</label>
+                        <input type="text" class="form-control" name="classification" id="description"/>
+                    </div>
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="genreAction('add')">Add Genre</a>
+                    <!-- input type="submit" class="btn btn-success" id="addButton" value="Add Genre" -->
+                </form>
+            </div>
+            <div class="panel-body none formData" id="editForm">
+                <h2 id="actionLabel">Edit Genre</h2>
+                <form class="form" id="genreEditForm" enctype='application/json'>
+                    <div class="form-group">
+                        <label>Genre</label>
+                        <input type="text" class="form-control" name="genre" id="genreEdit"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" class="form-control" name="classification" id="classificationEdit"/>
+                    </div>
+                    <input type="hidden" class="form-control" name="id" id="idEdit"/>
+                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="genreAction('edit')">Update Genre</a>
+                    <!-- input type="submit" class="btn btn-success" id="editButton" value="Update Genre" -->
+                </form>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Genre</th>
+                        <th>Classification</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="genreData">
+                    <?php
+                    $count = 0;
+                    foreach ($genres as $genre): $count++;
+                        ?>
+                        <tr>
+                            <td><?php echo '#' . $count; ?></td>
+                            <td><?php echo $genre['genre']; ?></td>
+                            <td><?php echo $genre['classification']; ?></td>
+                            <td>
+                                <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editGenre('<?php echo $genre['id']; ?>')"></a>
+                                <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? genreAction('delete', '<?php echo $genre['id']; ?>') : false;"></a>
+                            </td>
+                        </tr>
+                        <?php
+                    endforeach;
+                    ?>
+                    <tr><td colspan="5">No genre(s) found......</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+

@@ -18,7 +18,8 @@ class GenresFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
-        'genre' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'genre' => ['type' => 'string', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'classification' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -35,7 +36,8 @@ class GenresFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'genre' => 'Lorem ipsum dolor sit amet'
+                'genre' => 'Lorem ipsum dolor sit amet',
+                'classification' => 'Lorem ipsum dolor sit amet'
             ],
         ];
         parent::init();

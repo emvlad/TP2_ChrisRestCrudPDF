@@ -47,6 +47,7 @@ class EntrefiletsTableTest extends TestCase {
 
     public function testFindPublished() {
         $query = $this->Entrefilets->find('published');
+       
         $this->assertInstanceOf('Cake\ORM\Query', $query);    
         $result = $query->hydrate(false)->toArray();
         

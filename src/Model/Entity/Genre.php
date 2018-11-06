@@ -8,7 +8,9 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $genre
+ * @property string $classification
  *
+ * @property \App\Model\Entity\Entrefilet[] $entrefilets
  * @property \App\Model\Entity\Theme[] $themes
  */
 class Genre extends Entity
@@ -25,7 +27,7 @@ class Genre extends Entity
      */
     protected $_accessible = [
         'genre' => true,
-        
+        'classification' => true,
         'entrefilets' => true,
         'themes' => true
     ];

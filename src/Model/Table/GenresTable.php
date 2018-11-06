@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Genres Model
  *
+ * @property \App\Model\Table\EntrefiletsTable|\Cake\ORM\Association\HasMany $Entrefilets
  * @property \App\Model\Table\ThemesTable|\Cake\ORM\Association\HasMany $Themes
  *
  * @method \App\Model\Entity\Genre get($primaryKey, $options = [])
@@ -36,17 +37,13 @@ class GenresTable extends Table
         $this->setTable('genres');
         $this->setDisplayField('genre');
         $this->setPrimaryKey('id');
-        
-        
-          $this->hasMany('Entrefilets', [
+
+        $this->hasMany('Entrefilets', [
             'foreignKey' => 'genre_id'
         ]);
-        
-              
         $this->hasMany('Themes', [
-            'foreignKey' => 'genre_id' ]);    
-
-          
+            'foreignKey' => 'genre_id'
+        ]);
     }
 
     /**
@@ -59,12 +56,16 @@ class GenresTable extends Table
     {
         $validator
             ->integer('id')
-            ->notEmpty('id', 'create');
+            ->allowEmpty('id', 'create');
 
         $validator
             ->scalar('genre')
-            ->maxLength('genre', 255)
             ->allowEmpty('genre');
+
+        $validator
+            ->scalar('classification')
+            ->maxLength('classification', 255)
+            ->allowEmpty('classification');
 
         return $validator;
     }

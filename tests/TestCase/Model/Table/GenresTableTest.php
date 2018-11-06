@@ -25,6 +25,7 @@ class GenresTableTest extends TestCase
      */
     public $fixtures = [
         'app.genres',
+        'app.entrefilets',
         'app.themes'
     ];
 

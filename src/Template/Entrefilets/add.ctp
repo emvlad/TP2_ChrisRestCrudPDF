@@ -20,20 +20,15 @@ echo $this->Html->script('Entrefilets/add', ['block' => 'scriptBottom']);
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Entrefilets'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        
+         <li><?= $this->Html->link(__('List Category'), ['controller' => 'Genres', 'action' => 'index']) ?></li>
+
         <li><?= $this->Html->link(__('List Themes'), ['controller' => 'Themes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Theme'), ['controller' => 'Themes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Gazettes'), ['controller' => 'Gazettes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Gazette'), ['controller' => 'Gazettes', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Entrefilets Title Translation'), ['controller' => 'Entrefilets_title_translation', 'action' => 'index']) ?></li>
 
-        <li><?= $this->Html->link(__('List Critiqs'), ['controller' => 'Critiqs', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Critiq'), ['controller' => 'Critiqs', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?></li>
+     
     </ul>
 </nav>
 <div class="entrefilets form large-9 medium-8 columns content">
