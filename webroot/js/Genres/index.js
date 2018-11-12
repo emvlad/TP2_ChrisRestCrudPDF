@@ -9,15 +9,17 @@ function getGenres() {
                     genreTable.empty();
                     var count = 1;
                     $.each(genres.data, function (key, value)
+                    
+
                     {
                         var editDeleteButtons = '</td><td>' +
                                 '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editGenre(' + value.id + ')"></a>' +
                                 '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? genreAction(\'delete\', ' + value.id + ') : false;"></a>' +
                                 '</td></tr>';
-                        genreTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.description + editDeleteButtons);
+                        genreTable.append('<tr><td>' + count + '</td><td>' + value.genre + '</td><td>' + value.classification + editDeleteButtons);
                         count++;
                     });
-
+                  
                 }
     });
 }
@@ -62,11 +64,20 @@ function genreAction(type, id) {
     }
     $.ajax({
         type: requestType,
+      /*  
+         headers : {
+            'X-CSRF-Token': $('[name="_csrfToken"]').val()
+	},
+        
+        */
+        
         url: ajaxUrl,
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(genreData),
+        //timeout: 5000,
         success: function (msg) {
+            console.log('SUCCESS');
             if (msg) {
                 alert('Genre data has been ' + statusArr[type] + ' successfully.');
                 getGenres();
@@ -75,7 +86,16 @@ function genreAction(type, id) {
             } else {
                 alert('Some problem occurred, please try again.');
             }
-        }
+        },
+        
+       /* 
+        fail: function(xhr, textStatus, errorThrown){
+                        console.log('ERROR');
+
+            alert(console.log(xhr));
+            alert(console.log(textStatus));
+            alert(console.log(errorThrown));
+        }*/
     });
 }
 

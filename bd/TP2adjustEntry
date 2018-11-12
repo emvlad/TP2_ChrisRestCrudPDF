@@ -1,4 +1,32 @@
 
+Debug 1:add genre avec monopage
+{ "message": "Trait \u0027Crud\\Controller\\ControllerTrait\u0027 not found",
+"url": "\/api\/genres", "code": 500, "file":
+ "C:\\Program Files (x86)\\Ampps\\www\\TP2_ChrisRestCrudPDF
+\\src\\Controller\\api\\AppController.php", "line": 10 }
+
+Démarches(line 10): (le component est présent)
+TP2..app\Controller\api: 
+            use \Crud\Controller\ControllerTrait; 
+------------------------------------------------------
+
+Debug 2: To Ressolve Csrf forbidden??
+Démarches : mis en commentaire du component
+..src\application
+use Cake\Http\Middleware\CsrfProtectionMiddleware;
+(problème résolu: les paramètres sont correctes)
+-----------------------------------------------------
+Debug 3..\config\bootstrap.php:
+Comment chargés:
+Plugin::load('Crud');
+Plugin::load('ADmad/JwtAuth');
+Plugin::load('BootstrapUI');
+--------------------------------------
+
+Debug 4. expertise view[PDF]
+
+=======================================================
+
 1-On doit retrouver une interface avec un préfixe de route "admin" pour gérer
  le contenu de la table choisie pour l'interface monopage :
 

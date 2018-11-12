@@ -82,13 +82,15 @@ $aboutDescription = 'This is a cakePHP development framework';
 
 </p>
 <hr> 
-<h3> Travaux 2ème partie - Avant TP2 </h3>
+<h3> Travaux + TP2 </h3>
 
 <p><br>
     -Autocomplete : add user (full_name).<br>
     -Liste dépendante: add entrefilets (genres - thèmes). <br>
-
-<h3> Test avant TP2 </h3>
+    -Convert to PDF : page d'accueil view[PDF]<br>
+    -Monopage:Menu gauche-Mono Page Genres<br>
+    -Bootstrap-Admin: Menu principal Admin LineUp<br>
+<h3> Test TP2 </h3>
 1-test pour une méthode "find" dans le modèle...<br>
 Voir: testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest<br><br>
 
@@ -108,27 +110,29 @@ Voir:testIndex tests/TestCase/Controller/EntrefiletsControllerTest<br><br>
 -d'ajout, de modification et de suppression.<br>
 Voir:...<br><br>
 
-
 4-test de code JS pour vérifier la faille XSS<br>
 Voir:......<br><br>   
 
-
 5-rapport HTML de type "Coverage" <br>    
-cliquez le lien vers le rapport ici =>
-
-6-Table choisie pour l'interface monopage: 
-Menu: List Category - "GenresTable"
-
-<?php
-// check out, How to use url-php? voir prof. or students.
-$url = "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/";
-?>
+cliquez le lien vers le rapport ici => 
 
 <a href= "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/index.html">Coverage</a>;
 </p> 
 
 <hr>
 
+<?php /*
+// check out, How to use url-php in that case? voir prof. or students.
+
+ $url = "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/";
+
+
+ <?= $this->Html->link('Url_Coverage', $url)  ?> 
+ 
+ */
+
+
+?>
 </body>
 </html>
 

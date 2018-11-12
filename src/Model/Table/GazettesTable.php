@@ -34,11 +34,8 @@ class GazettesTable extends Table {
 
         $this->setTable('gazettes');
         $this->setDisplayField('dynamique');
-        $this->setPrimaryKey('id');
-
-        $this->addBehavior('Timestamp');
-        
-           $this->hasMany('Entrefilets', [
+        $this->setPrimaryKey('id');        
+        $this->hasMany('Entrefilets', [
             'foreignKey' => 'gazette_id'
         ]);
         
@@ -63,8 +60,6 @@ class GazettesTable extends Table {
 
         return $validator;
     }
-    
-    
     
      public function findDynamique(Query $query, array $options) {
         $query->where([

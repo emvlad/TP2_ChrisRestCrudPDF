@@ -4,6 +4,7 @@ echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['b
 echo $this->Html->script('Genres/index', ['block' => 'scriptBottom']);
 ?>
 
+
 <div class="container">
     <div class="row">
         <div class="panel panel-default genres-content">
@@ -13,15 +14,15 @@ echo $this->Html->script('Genres/index', ['block' => 'scriptBottom']);
                 <form class="form" id="genreAddForm" enctype='application/json'>
                     <div class="form-group">
                         <label>Genre</label>
-                        <input type="text" class="form-control" name="genre" id="name"/>
+                        <input type="text" class="form-control" name="genre" id="genre"/>
                     </div>
                     <div class="form-group">
                         <label>Classification</label>
-                        <input type="text" class="form-control" name="classification" id="description"/>
+                        <input type="text" class="form-control" name="classification" id="classification"/>
                     </div>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
                     <a href="javascript:void(0);" class="btn btn-success" onclick="genreAction('add')">Add Genre</a>
-                    <!-- input type="submit" class="btn btn-success" id="addButton" value="Add Genre" -->
+                    <!--input type="submit" class="btn btn-success" id="addButton" value="Add Genre" -->
                 </form>
             </div>
             <div class="panel-body none formData" id="editForm">
@@ -32,13 +33,13 @@ echo $this->Html->script('Genres/index', ['block' => 'scriptBottom']);
                         <input type="text" class="form-control" name="genre" id="genreEdit"/>
                     </div>
                     <div class="form-group">
-                        <label>Description</label>
+                        <label>Classification</label>
                         <input type="text" class="form-control" name="classification" id="classificationEdit"/>
                     </div>
                     <input type="hidden" class="form-control" name="id" id="idEdit"/>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
                     <a href="javascript:void(0);" class="btn btn-success" onclick="genreAction('edit')">Update Genre</a>
-                    <!-- input type="submit" class="btn btn-success" id="editButton" value="Update Genre" -->
+                    <!--input type="submit" class="btn btn-success" id="editButton" value="Update Genre" -->
                 </form>
             </div>
             <table class="table table-striped">

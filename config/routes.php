@@ -29,10 +29,13 @@ Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
     $routes->resources('Genres');
     $routes->resources('Entrefilets');
+    Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
     Router::connect('/api/entrefilets/register', ['controller' => 'Entrefilets', 'action' => 'add', 'prefix' => 'api']);
     $routes->fallbacks('InflectedRoute');
 });
-
+Router::prefix('Admin', function ($routes) {
+    $routes->fallbacks('InflectedRoute');
+});
 
 
 Router::defaultRouteClass(DashedRoute::class);
@@ -49,11 +52,13 @@ Router::scope('/', function (RouteBuilder $routes) {
     
     //=================== Open directly to Welcome - Entrefilet ====================
     //1-access direct to index entrefilet
-       $routes->connect('/', ['controller' => 'Entrefilets', 'action' => 'index']);
+      // $routes->connect('/', ['controller' => 'Entrefilets', 'action' => 'index']);
      //...and connect the rest of 'Pages' controller's URLs.
        $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
      //connect email transport
        $routes->connect('/email',['controller'=>'Users','action'=>'maildex']);
+       
+       $routes->connect('/', ['controller' => 'Genres', 'action' => 'index']);
       $routes->fallbacks(DashedRoute::class);
 });
 

@@ -29,13 +29,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         echo $this->Html->css([
             'base.css',
             'style.css',
-              'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'Cocktails/basic.css',
+            'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
             'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
-        
-            
-            
-            ]);
+        ]);
         ?>
 
         <?= $this->fetch('meta') ?>
@@ -44,8 +40,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         echo $this->Html->script([
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
-             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-            
+            'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
                 ], ['block' => 'scriptLibraries']
         );
         ?>
@@ -60,43 +55,52 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <div class="top-bar-section">
                 <ul class="right">
 
-                    <li><?=
-                        $this->Html->link(__('Home'), ['controller' => 'Entrefilets',
-                            'action' => 'index'])
-                        ?></li>
-                  
-                    <li> 
-                        <?php
-                        $loguser = $this->request->session()->read('Auth.User');
-                        if ($loguser) {
-                            $user = $loguser['email'];
-                            echo $this->Html->link($user . ' logout', ['controller' => 'Users',
-                                'action' => 'logout']);
-                        } else {
-                            echo $this->Html->link('login', ['controller' => 'Users',
-                                'action' => 'login']);
-                        }
-                        ?>
-                    </li>
-                    <li>
-                        <?=
-                        $this->Html->link('French', ['action' => 'changeLang', 'fr_CA'], ['escape' => false])
-                        ?>
-                    </li>
-                    <li>
-                        <?=
-                        $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false])
-                        ?>
-                    </li>
+                             <li><?=
+                             $this->Html->link(__('Home'), ['controller' => 'Entrefilets',
+                                 'action' => 'index'])
+                             ?></li>
 
-                    <li>   
-                         <?=
-                        $this->Html->link('Spanish', ['action' => 'changeLangEs', 'es_ES'], ['escape' => false])
-                        ?>
-                    </li>
+                             <li><?=
+                                 $this->Html->link('Admin LineUp', [
+                                     'prefix' => 'admin',
+                                     'controller' => 'Genres',
+                                     'action' => 'index'
+                                 ]);
+                                 ?>
+                             </li> 
+             
+                             <li> 
+                             <?php
+                             $loguser = $this->request->session()->read('Auth.User');
+                             if ($loguser) {
+                                 $user = $loguser['email'];
+                                 echo $this->Html->link($user . ' logout', ['controller' => 'Users',
+                                     'action' => 'logout']);
+                             } else {
+                                 echo $this->Html->link('login', ['controller' => 'Users',
+                                     'action' => 'login']);
+                             }
+                             ?>
+                             </li>
+                             <li>
+                             <?=
+                             $this->Html->link('French', ['action' => 'changeLang', 'fr_CA'], ['escape' => false])
+                             ?>
+                             </li>
+                             <li>
+                             <?=
+                             $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false])
+                             ?>
+                             </li>
+
+                             <li>   
+                             <?=
+                             $this->Html->link('Spanish', ['action' => 'changeLangEs', 'es_ES'], ['escape' => false])
+                             ?>
+                             </li>
 
 
-                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
+                             <li><a target="_blank" href="https://book.cakephp.org/3.0/">More Info</a></li>
                     <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
 
                     <li>
@@ -106,17 +110,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 </ul>
             </div>
         </nav>
-            <?= $this->Flash->render() ?>
+        <?= $this->Flash->render() ?>
         <div class="container clearfix">
-<?= $this->fetch('content') ?>
+            <?= $this->fetch('content') ?>
         </div>
         <footer>
         </footer>
-        
-         <?= $this->fetch('scriptLibraries') ?>
+
+        <?= $this->fetch('scriptLibraries') ?>
         <?= $this->fetch('script'); ?>
         <?= $this->fetch('scriptBottom') ?> 
-        
+
     </body>
 </html>
 

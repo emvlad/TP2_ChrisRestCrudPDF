@@ -15,10 +15,10 @@
 namespace App;
 
 use Cake\Core\Configure;
-use Cake\Core\Exception\MissingPluginException;
+//use Cake\Core\Exception\MissingPluginException;
 use Cake\Error\Middleware\ErrorHandlerMiddleware;
 use Cake\Http\BaseApplication;
-use Cake\Http\Middleware\CsrfProtectionMiddleware;
+//use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
 
@@ -37,10 +37,17 @@ class Application extends BaseApplication
     {
         // Call parent to load bootstrap from files.
         parent::bootstrap();
+      
 
         if (PHP_SAPI === 'cli') {
             try {
-                $this->addPlugin('Bake');
+                $this->addPlugin('Bake');             
+                
+                $this->addPlugin('Crud');
+
+                $this->addPlugin('ADmad/JwtAuth');                 
+                
+                
             } catch (MissingPluginException $e) {
                 // Do not halt if the plugin is missing
             }
@@ -79,10 +86,14 @@ class Application extends BaseApplication
             // you might want to disable this cache in case your routing is extremely simple
             ->add(new RoutingMiddleware($this, '_cake_routes_'))
 
-            // Add csrf middleware.
+          /*  // Add csrf middleware.
             ->add(new CsrfProtectionMiddleware([
                 'httpOnly' => true
-            ]));
+            ]))
+                
+                */
+                
+           ;
 
         return $middlewareQueue;
     }

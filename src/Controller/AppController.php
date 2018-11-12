@@ -20,6 +20,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
 
+
 /**
  * Application Controller
  *
@@ -29,7 +30,8 @@ use Cake\I18n\I18n;
  * @link https://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-
+    
+   
     /**
      * Initialization hook method.
      *
@@ -41,6 +43,7 @@ class AppController extends Controller {
      */
     public function initialize() {
         parent::initialize();
+        
         //------------------internationalisation------------------
         I18n::setLocale($this->request->session()->read('Config.language'));
         //---------------------------------------------------------

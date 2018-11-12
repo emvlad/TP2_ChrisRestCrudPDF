@@ -66,6 +66,7 @@ class EntrefiletsController extends AppController {
         ]);
 
         $this->set('entrefilet', $entrefilet);
+        $this->set('_serialize', ['entrefilet']);
     }
 
     /**
