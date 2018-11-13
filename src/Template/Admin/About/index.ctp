@@ -28,7 +28,7 @@ $aboutDescription = 'This is a cakePHP development framework';
         "url" => 'http://www.databaseanswers.org/data_models/police_departments/index.htm'
     ]);
 
-    echo $this->Html->image("picts/chrisCake1.jpg", ["alt" => "chrisCake1.jpg",
+    echo $this->Html->image("picts/chrisTP2crud.jpg", ["alt" => "chrisTP2crud.jpg",
         "width" => "600px",
         "height" => "700px",
     ]);
