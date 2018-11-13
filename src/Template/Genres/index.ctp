@@ -2,6 +2,9 @@
 $urlToRestApi = $this->Url->build('/api/genres', true);
 echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
 echo $this->Html->script('Genres/index', ['block' => 'scriptBottom']);
+
+//echo $this->Html->css('path/to/bootstrap.css');
+//echo $this->Html->script(['path/to/jquery.js', 'path/to/bootstrap.js']);
 ?>
 
 

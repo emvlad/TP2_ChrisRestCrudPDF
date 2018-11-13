@@ -108,6 +108,12 @@ function editGenre(id) {
             $('#genreEdit').val(data.data.genre);
             $('#classificationEdit').val(data.data.classification);       
             $('#editForm').slideDown();
+            
+      
+         
+             //console.log(data);
         }
+     
     });
+ 
 }

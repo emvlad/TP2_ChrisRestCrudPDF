@@ -5,7 +5,11 @@
  */
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">        
+    <ul class="side-nav"> 
+        <li>
+              <a href="http://localhost/TP2_ChrisRestCrudPDF"/>Mono_page</a>
+        </li>
+      
     </ul>
 </nav>
 <div class="entrefilets index large-9 medium-8 columns content">

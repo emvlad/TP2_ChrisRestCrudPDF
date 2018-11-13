@@ -15,7 +15,6 @@ class EntrefiletsController extends AppController {
 
     public function initialize() {
         parent::initialize();
-        
         $this->viewBuilder()->setLayout('admin');
         
     }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Routes configuration
  *
@@ -17,12 +18,12 @@
  * @link          https://cakephp.org CakePHP(tm) Project
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
 use Cake\Core\Plugin;
 use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
+Router::extensions(['pdf']);
 Router::extensions(['json', 'xml']);
 
 Router::prefix('api', function ($routes) {
@@ -49,17 +50,17 @@ Router::scope(
 }
 );
 Router::scope('/', function (RouteBuilder $routes) {
-    
+
     //=================== Open directly to Welcome - Entrefilet ====================
     //1-access direct to index entrefilet
-      // $routes->connect('/', ['controller' => 'Entrefilets', 'action' => 'index']);
-     //...and connect the rest of 'Pages' controller's URLs.
-       $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
-     //connect email transport
-       $routes->connect('/email',['controller'=>'Users','action'=>'maildex']);
-       
-       $routes->connect('/', ['controller' => 'Genres', 'action' => 'index']);
-      $routes->fallbacks(DashedRoute::class);
+    // $routes->connect('/', ['controller' => 'Entrefilets', 'action' => 'index']);
+    //...and connect the rest of 'Pages' controller's URLs.
+    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    //connect email transport
+    $routes->connect('/email', ['controller' => 'Users', 'action' => 'maildex']);
+
+    $routes->connect('/', ['controller' => 'Genres', 'action' => 'index']);
+    $routes->fallbacks(DashedRoute::class);
 });
 
 /**
