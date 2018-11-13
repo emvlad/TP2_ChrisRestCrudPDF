@@ -36,8 +36,8 @@ class GenresFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'genre' => 'Lorem ipsum dolor sit amet',
-                'classification' => 'Lorem ipsum dolor sit amet'
+                'genre' => 'Espionnage',
+                'classification' => 'Adulte'
             ],
         ];
         parent::init();

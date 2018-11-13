@@ -28517,3 +28517,486 @@ Stack Trace:
 #17 {main}
 
 
+2018-11-13 03:13:49 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:16:31 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:16:34 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:16:42 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:17:57 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:18:18 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:19:23 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:19:50 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:20:36 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:21:29 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:34:11 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 03:35:17 Error: GenresController::beforeFilter
+2018-11-13 03:35:22 Error: GenresController::beforeFilter
+2018-11-13 03:35:31 Error: GenresController::beforeFilter
+2018-11-13 03:37:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:37:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:38:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:38:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:38:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:38:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:39:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:39:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 03:42:32 Error: GenresController::beforeFilter
+2018-11-13 03:42:41 Error: GenresController::beforeFilter
+2018-11-13 03:43:29 Error: GenresController::beforeFilter
+2018-11-13 03:43:33 Error: GenresController::beforeFilter
+2018-11-13 03:44:07 Error: GenresController::beforeFilter
+2018-11-13 03:44:16 Error: GenresController::beforeFilter
+2018-11-13 03:44:21 Error: GenresController::beforeFilter
+2018-11-13 03:44:49 Error: GenresController::beforeFilter
+2018-11-13 03:45:03 Error: GenresController::beforeFilter
+2018-11-13 03:45:07 Error: GenresController::beforeFilter
+2018-11-13 04:00:54 Error: GenresController::beforeFilter
+2018-11-13 04:01:02 Error: GenresController::beforeFilter
+2018-11-13 04:01:15 Error: GenresController::beforeFilter
+2018-11-13 04:01:23 Error: GenresController::beforeFilter
+2018-11-13 04:01:27 Error: GenresController::beforeFilter
+2018-11-13 04:02:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-11-13 04:06:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/BootstrapUI.dashboard.css
+Referer URL: http://localhost/TP2_ChrisRestCrudPDF/admin/genres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+

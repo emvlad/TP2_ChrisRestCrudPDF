@@ -1597,3 +1597,250 @@ PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.
 
 
 
+2018-11-13 03:06:30 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(140): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(97): Cake\Http\BaseApplication->makePlugin('ADmad/JwtAuth', Array)
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(48): Cake\Http\BaseApplication->addPlugin('ADmad/JwtAuth')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#6 {main}
+
+
+2018-11-13 03:07:01 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(140): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(97): Cake\Http\BaseApplication->makePlugin('ADmad/JwtAuth', Array)
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(48): Cake\Http\BaseApplication->addPlugin('ADmad/JwtAuth')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#6 {main}
+
+
+2018-11-13 03:16:04 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
+2018-11-13 03:22:03 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
+2018-11-13 03:24:30 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUI could not be found. in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'BootstrapUI',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('BootstrapUI')
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\config\bootstrap.php(209): Cake\Core\Plugin::load('BootstrapUI')
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Application.php(39): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
+2018-11-13 04:17:11 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 04:17:11 Warning: Warning (2): DateTimeImmutable::modify(): Failed to parse time string (null) at position 0 (n): The timezone could not be found in the database in [C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Database\Type\DateTimeType.php, line 188]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+DateTimeImmutable::modify() - [internal], line ??
+Cake\Database\Type\DateTimeType::toPHP() - CORE\src\Database\Type\DateTimeType.php, line 188
+Cake\Database\FieldTypeConverter::__invoke() - CORE\src\Database\FieldTypeConverter.php, line 135
+Cake\Database\Statement\CallbackStatement::fetch() - CORE\src\Database\Statement\CallbackStatement.php, line 59
+Cake\ORM\ResultSet::_fetchResult() - CORE\src\ORM\ResultSet.php, line 485
+Cake\ORM\ResultSet::valid() - CORE\src\ORM\ResultSet.php, line 276
+iterator_to_array - [internal], line ??
+Cake\ORM\ResultSet::toArray() - CORE\src\Collection\CollectionTrait.php, line 562
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 326
+App\Test\TestCase\Model\Table\EntrefiletsTableTest::testFindPublished() - ROOT\tests\TestCase\Model\Table\EntrefiletsTableTest.php, line 52
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 04:23:56 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\EntrefiletsTitleTranslationFixture" not found. Fixture "app.entrefilets_title_translation" was referenced in test case "App\Test\TestCase\Controller\EntrefiletsControllerTest". in C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\EntrefiletsControllerTest))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-13 05:13:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class 1 could not be found.
+Exception Attributes: array (
+  'class' => '1',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(89): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(383): Cake\TestSuite\IntegrationTestCase->_sendRequest('/1', 'GET')
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\tests\TestCase\Controller\ThemesControllerTest.php(41): Cake\TestSuite\IntegrationTestCase->get(1, Array)
+#17 [internal function]: App\Test\TestCase\Controller\ThemesControllerTest->testView()
+#18 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ThemesControllerTest), Array)
+#19 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#20 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#21 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ThemesControllerTest))
+#22 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#25 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#26 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#27 {main}
+
+
+2018-11-13 05:13:26 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "themes" with primary key [NULL]
+Request URL: /themes/view
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Controller\ThemesController.php(62): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\ThemesController->view()
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ThemesController))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(383): Cake\TestSuite\IntegrationTestCase->_sendRequest('/themes/view', 'GET')
+#17 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\tests\TestCase\Controller\ThemesControllerTest.php(45): Cake\TestSuite\IntegrationTestCase->get('/themes/view')
+#18 [internal function]: App\Test\TestCase\Controller\ThemesControllerTest->testView()
+#19 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ThemesControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ThemesControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+
+2018-11-13 05:16:40 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "themes" with primary key [NULL]
+Request URL: /themes/view
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\src\Controller\ThemesController.php(62): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\ThemesController->view()
+#2 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ThemesController))
+#4 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#15 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#16 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(383): Cake\TestSuite\IntegrationTestCase->_sendRequest('/themes/view', 'GET')
+#17 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\tests\TestCase\Controller\ThemesControllerTest.php(42): Cake\TestSuite\IntegrationTestCase->get('/themes/view')
+#18 [internal function]: App\Test\TestCase\Controller\ThemesControllerTest->testView()
+#19 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ThemesControllerTest), Array)
+#20 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#21 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#22 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ThemesControllerTest))
+#23 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#25 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#26 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#27 C:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#28 {main}
+
+

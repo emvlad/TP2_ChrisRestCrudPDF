@@ -46,3 +46,7 @@ enregistrement spécifique doit offrir l'affichage également sous forme de docu
 7-L'application wkhtmltopdf doit être utilisée pour produire les documents pdf :
         Elle sera présente à l'emplacement 
     C:\wkhtmltopdf\bin lors de l'évaluation de votre travail.
+
+=======================================
+Actualiser test coverage:
+c:\Program Files (x86)\Ampps\www\TP2_ChrisRestCrudPDF>vendor\bin\phpunit --coverage-html webroot/coverage tests/TestCase/Model/Table/EntrefiletsTableTest

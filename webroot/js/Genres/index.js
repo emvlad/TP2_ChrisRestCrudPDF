@@ -9,8 +9,6 @@ function getGenres() {
                     genreTable.empty();
                     var count = 1;
                     $.each(genres.data, function (key, value)
-                    
-
                     {
                         var editDeleteButtons = '</td><td>' +
                                 '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editGenre(' + value.id + ')"></a>' +
@@ -86,7 +84,7 @@ function genreAction(type, id) {
             } else {
                 alert('Some problem occurred, please try again.');
             }
-        },
+        }
         
        /* 
         fail: function(xhr, textStatus, errorThrown){
@@ -108,7 +106,7 @@ function editGenre(id) {
         success: function (data) {
             $('#idEdit').val(data.data.id);
             $('#genreEdit').val(data.data.genre);
-            $('#classificationEdit').val(data.data.classification);
+            $('#classificationEdit').val(data.data.classification);       
             $('#editForm').slideDown();
         }
     });

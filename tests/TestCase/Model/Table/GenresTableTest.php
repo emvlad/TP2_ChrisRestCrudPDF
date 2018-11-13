@@ -40,6 +40,10 @@ class GenresTableTest extends TestCase
         $config = TableRegistry::getTableLocator()->exists('Genres') ? [] : ['className' => GenresTable::class];
         $this->Genres = TableRegistry::getTableLocator()->get('Genres', $config);
     }
+    
+    
+    
+    
 
     /**
      * tearDown method
@@ -53,23 +57,5 @@ class GenresTableTest extends TestCase
         parent::tearDown();
     }
 
-    /**
-     * Test initialize method
-     *
-     * @return void
-     */
-    public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test validationDefault method
-     *
-     * @return void
-     */
-    public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
+  
 }

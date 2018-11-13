@@ -203,9 +203,10 @@ if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 
-/*
-Plugin::load('Crud');
-Plugin::load('ADmad/JwtAuth');
-Plugin::load('BootstrapUI');
 
+Plugin::load('Crud');
+
+/*Plugin::load('ADmad/JwtAuth');
+Plugin::load('BootstrapUI');
 */
+

@@ -92,31 +92,35 @@ $aboutDescription = 'This is a cakePHP development framework';
     -Bootstrap-Admin: Menu principal Admin LineUp<br>
 <h3> Test TP2 </h3>
 1-test pour une méthode "find" dans le modèle...<br>
-Voir: testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest<br><br>
+(a): testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest(ok)<br><br>
 
 2-test pour une vérification de la validation de données (par exemple "email") <br>
-Voir (a):testNoBlank tests/TestCase/Model/Table/ThemesTableTest<br><br> 
-Voir (b):testValidEmail tests/TestCase/Model/Table/UsersTableTest<br><br> 
+(a):testNoBlank tests/TestCase/Model/Table/ThemesTableTest (ok)<br><br> 
+(b):testValidEmail tests/TestCase/Model/Table/UsersTableTest(ok)<br><br> 
 
 
 3-tests pour vérifier le traitement des requêtes envoyées à au moins un contrôleur : <br>
 a)vérifier accès autorisé et un autre non-autorisé.<br>
-Voir:testAddAuthenticated tests/TestCase/Controller/UsersControllerTest<br><br>
+Voir:testAddAuthenticated tests/TestCase/Controller/UsersControllerTest (ok)<br><br>
 
 b)vérifier actions:<br>
--de lecture (index et view), <br>
-Voir:testIndex tests/TestCase/Controller/EntrefiletsControllerTest<br><br>
+-de lecture (index), <br>
+Voir:testIndex tests/TestCase/Controller/ThemesControllerTest (ok)<br><br>
+-de lecture (view), <br>
+
+
+Voir:testIndex tests/TestCase/Controller/ThemesControllerTest (todo)<br><br>
 
 -d'ajout, de modification et de suppression.<br>
-Voir:...<br><br>
+Voir:...(todo)<br><br>
 
 4-test de code JS pour vérifier la faille XSS<br>
-Voir:......<br><br>   
+Voir:......(todo)<br><br>   
 
 5-rapport HTML de type "Coverage" <br>    
 cliquez le lien vers le rapport ici => 
 
-<a href= "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/index.html">Coverage</a>;
+<a href= "http://localhost/TP2_ChrisRestCrudPDF/webroot/coverage/index.html">Coverage</a>;
 </p> 
 
 <hr>
