@@ -4,6 +4,9 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+
+
+
 /**
  * Entrefilets Controller
  *
@@ -22,7 +25,7 @@ class EntrefiletsController extends AppController {
         $action = $this->request->getParam('action');
 
         // The add and tags actions are always allowed to logged in users.
-        if (in_array($action, ['add', 'tags', 'view'])) {
+        if (in_array($action, ['add', 'tags', 'view','pdf'])) {
             return true;
         }
 
@@ -81,8 +84,7 @@ class EntrefiletsController extends AppController {
 
             // when we build authentication out.
             $entrefilet->user_id = $this->Auth->user('id');
-            // Hardcoding the user_id =1
-
+           
             if ($this->Entrefilets->save($entrefilet)) {
                 $this->Flash->success(__('The entrefilet has been saved.'));
 
@@ -161,5 +163,19 @@ class EntrefiletsController extends AppController {
 
         return $this->redirect(['action' => 'index']);
     }
+    
+     public function pdf($id = null) {         
+            
+         $entrefilet = $this->Entrefilets->get($id, [
+            'contain' => ['Users', 'Themes', 'Gazettes',
+                'Files', 'Tags', 'Critiqs', 'Genres']
+        ]);
+       
+        $this->set('entrefilet', $entrefilet);
+       
+         
+     }
+     }  
 
-}
+//  use friendsofcake/cakepdf;
+//    $pdf->binary = 'localhost\TP2_ChrisRestCrudPDF\wkhtmltox\bin\wkhtmltopdf.exe';

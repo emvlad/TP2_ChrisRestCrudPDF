@@ -31,11 +31,10 @@ use BootstrapUI\View\UIViewTrait;
  */
 //class AppView extends UIViewTrait{
 //
-//
+//utiliser autre vue
 //class AppView extends UIView{
-
 //
-//
+//vue courrante...
 class AppView extends View {
     //non actif//use UIViewTrait;
 

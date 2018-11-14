@@ -85,11 +85,18 @@ $aboutDescription = 'This is a cakePHP development framework';
 <h3> Travaux + TP2 </h3>
 
 <p><br>
+    Remarques:<br>
+    -user name: cevchris23@gmail - password: vlad2312
+    -Utiliser Home - Monopage pour revenir à la page d'accueil <br>
+    -Monopage:Explore menu gauche - select Mono Page Genres<br>
+    -Ajout possible mais modification?<br>
+    -Link Menu AdminLineUp //class AppView extends UIView (inactive)<br>
+    -Bootstrap-Admin: Ajout possible mais modification?<br>
     -Autocomplete : add user (full_name).<br>
     -Liste dépendante: add entrefilets (genres - thèmes). <br>
-    -Convert to PDF : page d'accueil view[PDF]<br>
-    -Monopage:Menu gauche-Mono Page Genres<br>
-    -Bootstrap-Admin: Menu principal Admin LineUp<br>
+    -Convert to PDF : page d'accueil view[PDF] (inconvénient)<br>
+    
+    
 <h3> Test TP2 </h3>
 1-test pour une méthode "find" dans le modèle...<br>
 (a): testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest(ok)<br><br>

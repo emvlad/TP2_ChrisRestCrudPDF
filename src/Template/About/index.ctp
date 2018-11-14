@@ -67,29 +67,32 @@ $aboutDescription = 'This is a cakePHP development framework';
     Tous les utilisateurs vont pouvoir lire et écrire leurs opinions <br>
     et consulter leur statut sur le Pol-Blog.<br><br>
 
-    <hr>
-    Inconv&#233nient:<br>
-
-    1- Transport Email - Le port 465 ne répond plus<br>
-    alors nous l'avons attribué une valeur nulle ouy zéro<br>
-    pour ne pas arrêter le programme.<br> <br> 
-
-    2- Difficulté pour passer la commande "bin\cake Migrations Seed "
-    Documention ERROR: == CritiqsSeed: seeding<br>
-    Exception: SQLSTATE[HY000]: General error: 1 near ")":<br>
-    syntax error in [C:\Program Files (x86)\Ampps\www\ChrisMultiLng_v0_3_T<br>
-    \vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php, line 291]<br>            
 
 </p>
 <hr> 
 <h3> Travaux + TP2 </h3>
 
 <p><br>
+    Remarques:<br>
+    -user name: cevchris23@gmail - password: vlad2312
+    -Utiliser Home - Monopage pour revenir à la page d'accueil <br>
+    -Monopage:Explore menu gauche - select Mono Page Genres<br>
+    -Ajout possible mais modification?<br>
+    -Link Menu AdminLineUp //class AppView extends UIView (inactive)<br>
+    -Bootstrap-Admin: Ajout possible mais modification?<br>
     -Autocomplete : add user (full_name).<br>
     -Liste dépendante: add entrefilets (genres - thèmes). <br>
-    -Convert to PDF : page d'accueil view[PDF]<br>
-    -Monopage:Menu gauche-Mono Page Genres<br>
-    -Bootstrap-Admin: Menu principal Admin LineUp<br>
+    -Convert to PDF : page d'accueil view[PDF] (inconvénient)<br>
+
+<hr>   
+        * Inconv&#233nient:<br>
+        -Ajuster la dimension UI et la fonction pdf.<br>
+        -Modidier data (mis à jour).<br>
+        -Quelques tests (json).<br>
+
+<hr>
+
+
 <h3> Test TP2 </h3>
 1-test pour une méthode "find" dans le modèle...<br>
 (a): testFindPublished tests/TestCase/Model/Table/EntrefiletsTableTest(ok)<br><br>
@@ -126,16 +129,14 @@ cliquez le lien vers le rapport ici =>
 <hr>
 
 <?php /*
-// check out, How to use url-php in that case? voir prof. or students.
+  // check out, How to use url-php in that case? voir prof. or students.
 
- $url = "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/";
+  $url = "http://localhost/ChrisMultiLng_v0_4_Jtest/webroot/coverage/";
 
 
- <?= $this->Html->link('Url_Coverage', $url)  ?> 
- 
+  <?= $this->Html->link('Url_Coverage', $url)  ?>
+
  */
-
-
 ?>
 </body>
 </html>
